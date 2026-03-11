@@ -1,9 +1,13 @@
 # cascade-map
+
+Structural diagnostics for software systems.
+
+Visualize dependency cascades and propagation paths in a codebase.
+
+
+# cascade-map
 What cascade-map detects: Long dependency chains  Deep module chains are cascade vectors.  Dependency hubs  Modules with unusually high incoming edges.  Propagation paths  Shows how failures or changes travel.
 ---
-# cascade-map
-
-**Visualize dependency cascades in a codebase.**
 
 `cascade-map` analyzes a repository’s import relationships and reveals **dependency chains** that could propagate changes or failures across the system.
 
@@ -235,3 +239,25 @@ Software systems evolve over time, and their **structure** evolves with them.
 Understanding that structure is often the first step toward making systems more stable.
 
 `cascade-map` is a small tool designed to help make that structure visible.
+# Related Tools
+
+This project is part of a small family of tools exploring structural diagnostics for software systems.
+
+structural-scan — detects structural signals in codebases
+
+test-audit — analyzes the structural health of test suites
+
+cascade-map — visualizes dependency cascade paths
+
+Each tool examines a different structural layer of a system:
+
+codebase structure  →  structural-scan
+test architecture   →  test-audit
+dependency geometry →  cascade-map
+
+Together they explore a simple idea:
+
+software systems have structure, and that structure can be analyzed.
+
+
+These tools are intentionally small and independent, but they share a common goal: making structural properties of software systems visible.
